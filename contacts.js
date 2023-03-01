@@ -13,7 +13,7 @@ async function listContacts() {
         console.log(error);
     }
 }
-listContacts();
+// listContacts();
 
 function getContactById(contactId) {
     // try {
@@ -21,15 +21,28 @@ function getContactById(contactId) {
     // }
 }
 
-function removeContact(contactId) {
-
+async function removeContact(contactId) {
+    try {
+        const data = await fs.readFile(contactsPath);
+        const result = JSON.parse(data);
+        for (const key in result) {
+            if (result[key].id === contactId) {
+                delete result[key];
+            }
+        }   
+        console.table(result); 
+    } catch (error) {
+        console.log(error);
+    }
 }
 
-function addContact(name, email, phone) {
-    // try {
-    //     const data = await fs.readFile(contactsPath);
+async function addContact(name, email, phone) {
+    try {
+        const data = await fs.readFile(contactsPath);
 
-    // }
+    } catch (error) {
+        console.log(error);
+    }
 }
 
 module.exports = {
