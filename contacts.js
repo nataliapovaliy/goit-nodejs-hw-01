@@ -58,14 +58,10 @@ async function addContact(name, email, phone) {
         
         result.push(contactForAdd);
         console.log(result);
-        // console.log(JSON.stringify(newResult));
-        // console.log('newResult>>>', newResult);
-
     } catch (error) {
         console.log(error);
     }
 }
-addContact('Anna Anna', 'email.@gmail.com', '(888) 212-212');
 
 module.exports = {
     listContacts,
