@@ -1,6 +1,27 @@
 const { listContacts, getContactById, removeContact, addContact } = require('./contacts');
+const argv = require('yargs').argv;
 
-listContacts();
-getContactById('5');
-removeContact('7');
-addContact('Anna Anna', 'email.@gmail.com', '(888) 212-212');
+function invokeAction({ action, id, name, email, phone }) {
+    switch (action) {
+        case 'list':
+        listContacts();
+        break;
+
+        case 'get':
+        getContactById(id);
+        break;
+
+        case 'add':
+        addContact(name, email, phone);
+        break;
+
+        case 'remove':
+        removeContact(id);
+        break;
+
+        default:
+        console.warn("\x1B[31m Unknown action type!");
+    }
+}
+
+invokeAction(argv);
