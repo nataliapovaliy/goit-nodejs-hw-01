@@ -1,6 +1,6 @@
 # goit-nodejs-hw-01
 
-List
+list
 https://prnt.sc/mN7q_vjTWlJb
 
 get
