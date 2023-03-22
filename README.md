@@ -9,5 +9,5 @@ https://prnt.sc/FYTpeWGL1fwl
 add
 https://prnt.sc/08c65LNFyvmj
 
-Remove
+remove
 https://prnt.sc/8_D1OQzCX_Oj
