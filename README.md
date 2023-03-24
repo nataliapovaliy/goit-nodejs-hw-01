@@ -6,7 +6,7 @@ https://prnt.sc/mN7q_vjTWlJb
 Get
 https://prnt.sc/FYTpeWGL1fwl
 
-add
+Add
 https://prnt.sc/08c65LNFyvmj
 
 remove
