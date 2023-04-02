@@ -3,7 +3,7 @@
 list
 https://prnt.sc/mN7q_vjTWlJb
 
-Get
+get
 https://prnt.sc/FYTpeWGL1fwl
 
 Add
